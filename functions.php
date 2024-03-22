@@ -25,3 +25,9 @@ function add_normalize_CSS() {
 }
 
 add_action('wp_enqueue_scripts', 'add_normalize_CSS');
+
+function datum_link_shortcode() {
+    return date('Y-m-d H:m:s');
+}
+
+add_shortcode('datum', 'datum_link_shortcode');

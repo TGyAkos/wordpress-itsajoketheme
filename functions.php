@@ -10,6 +10,9 @@ function add_widget_support() {
         'after_title'   => '</h2>',
     ) );
 }
+
+add_theme_support('post-thumbnails');
+
 // Hook the widget initiation and run our function
 add_action( 'widgets_init', 'add_widget_support' );
 
